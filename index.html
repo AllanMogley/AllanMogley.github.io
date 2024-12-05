@@ -1,164 +1,684 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>index</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
 
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Dennis Ivy</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./styles/main.css">
-        <link rel="stylesheet" href="./styles/theme-switcher.css">
-    </head>
-    <body>
-        <div id="container--main">
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
 
-            <section id="wrapper--hero" class="section--page">
-                <img id="profile-pic" src="./assets/images/profile_pic.png">
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
 
-                <div>
-                    <h1 id="user-name">Dennis Ivy</h1>
-                    <p id="bio">Software developer, developer advocate at <a href="https://www.appwrite.io/" target="_blank">Appwrite</a>, Udemy <a href="https://www.udemy.com/user/dennis-ivanov-5/" target="_blank">instructor</a>, <a href="https://www.youtube.com/c/dennisivy" target="_blank">YouTuber</a> and contributor at <a href="https://youtu.be/PtQiiknWUcI?t=6" target="_blank">Traversy Media</a>.</p>
-                    <p id="email">👉 dennis@dennisivy.com</p>
-                </div>  
-            </section>
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
 
-            <section class="section--page">
-        
-                <div id="socials--list">
-                    <a href="https://youtube.com/c/dennisivy" target="_blank">Youtube</a>
-                    <a href="https://twitter.com/dennisivy11" target="_blank">Twitter</a>
-                    <a href="https://www.linkedin.com/in/dennis-ivanov/" target="_blank">Linkedin</a>
-                    <a href="https://github.com/divanov11" target="_blank">Github</a>
-                    <a href="./assets/resume.pdf" target="_blank">Download Resume</a>
-                </div>
-            </section>
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
 
-            <section class="section--page">
-                <h2>Skills & Qualifications</h2>
-                <ul id="qualifications--list">
-                    <li>✔️ 10 Years experience in fullstack development</li>
-                    <li>✔️ Tech educator & online instructor (Youtube & Udemy)</li>
-                    <li>✔️ Techincal writing & Blogging</li>
-                    <li>✔️ SEO & paid ad campaigns (Google Adwords)</li>
-                </ul>
-            </section>
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
 
-            <section class="section--page">
-                <h2>Tech stack</h2>
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
 
-                <div id="wrapper--techstack__items">
-                    <div class="card--techstack"><span>Python, JavaScript, NodeJS</span></div>
-                    <div class="card--techstack"><span>Django, Express, Flask, FastAPI</span></div>
-                    <div class="card--techstack"><span>React, Next JS</span></div>
-                    <div class="card--techstack"><span>Postgres, MongoDB, MySQL</span></div>
-                </div>
-            </section>
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
 
-            <section id="work-history-wrapper" class="section--page">
-                <h2>Work History</h2>
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
 
-                <div class="card--work-history">
-                    <strong>🚧 DEVELOPER ADVOCATE | APPWRITE.IO</strong>
-                    <p>9/2023 - present</p>
-                    <p><strong>[Current Challenge]</strong> Working to improve developer adoption and experience across all Appwrites SDKs through educational content on the Appwrite <a href="https://www.youtube.com/appwrite" target="_blank">Youtube channel</a>, <a href="https://appwrite.io/blog/author/dennis-ivy" target="_blank">articles</a>, & <a href="https://www.youtube.com/live/VJvawxeUhN4">community events</a></p>
-                    <strong>[Progress since 9/2023]</strong>
-                    <ul>
-                        <li>Videos +39 | Views +136.6k</li>
-                        <li>Live streams: 5</li>
-                        <li>Articles: 9</li>
-                        <li>Events attended: 4</li>
-                    </ul>
-                </div>
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
 
-                <div class="line-break"></div>
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
 
-                <div class="card--work-history">
-                    <strong>🚧 DEVELOPER ADVOCATE | AGORA.IO</strong>
-                    <p>11/2021 - 9/2023</p>
-                    <p>Worked on making Agora’s Web-Based SDK more accessible through video tutorials, articles, demo projects, and event-based training. Also building out React UI components & leading a team to re-design Agora’s documentation and API reference.</p>
-                    <ul>
-                        <li>Doubled Web SDK’s monthly usage minutes from 15 million to 30 million minutes within my first 4 months</li>
-                        <li>Produced educational video content which resulted in 300k+ views on youtube</li>
-                        <li>Produced SEO campaigns and content to gain market share for related keywords.</li>
-                    </ul>
-                </div>
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
 
-                <div class="line-break"></div>
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
 
-                <div class="card--work-history">
-                    <strong>🚧 INSTRUCTOR | YOUTUBE, UDEMY, TEACHABLE</strong>
-                    <p>11/2019 - Present</p>
-                    <p>Produced content showcasing new tech, tutorials & interviews with top developers.</p>
-                    <ul>
-                        <li>210k+ Youtube Subscribers</li>
-                        <li>30,000 course copies sold</li>
-                        <li>12+ Million views on Youtube</li>
-                        <li>Made regular contributions to Traversy Medias YouTube channel (1.9m Subscribers)</li>
-                        <li>Tutorial videos included projects such as social networks, E-commerce, real-time video, stripe & PayPal integrations, and more </li>
-                    </ul>
-                </div>
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
 
-                <div class="line-break"></div>
+mark {
+	background-color: transparent;
+}
 
-                <div class="card--work-history">
-                    <strong>🚧 SENIOR DEVELOPER | FOI LABS</strong>
-                    <p>10/2017 - 10/2019</p>
-                    <p>Designed and developed a laboratory management system. My system
-                        provided an interface for lab technicians and customers to view and
-                        track data from samples tested in the lab.</p>
-                    <ul>
-                        <li>Designed prototype & pitched original idea for new lab management system (LIMS)</li>
-                        <li>Built the entire code base and brought version 1.0 of the LIMS system to market as a solo developer</li>
-                        <li>Onboarded and trained customers (Webinars & Conferences)</li>
-                        <li>Managed a small team of developers in the expansion of the LIMS system</li>
-                    </ul>
-                </div>
+.indented {
+	padding-left: 1.5em;
+}
 
-                <div class="line-break"></div>
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
 
-                <div class="card--work-history">
-                    <strong>🚧 DIGITAL MARKETER | UNIFIVE DIGITAL</strong>
-                    <p>2014 - 2017</p>
-                    <p>Started a digital agency building websites and marketing for
-                        local businesses.</p>
-                    <ul>
-                        <li>Organized SEO & SEM campaigns on a local and global scale.</li>
-                        <li>Saved a customer $110k a year by reducing Adwords CPC cost with optimization</li>
-                        <li>70 + websites built with my small team of developers and freelancers</li>
-                    </ul>
-                </div>
-            </section>
+img {
+	max-width: 100%;
+}
 
-            <section class="section--page">
-                <h2>Projects & Accomplishments</h2>
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
 
-                <div class="card--project">
-                    <a href="project1.html"><span>🏆 </span>Built a Laboratory management system for forensics lab</a>
-                </div>
+@page {
+	margin: 1in;
+}
 
-                <div class="card--project">
-                    <a href="project1.html" ><span>🏆 </span>Documentation website - Lead team to re-build docs for agora.io</a>
-                </div>
+.collection-content {
+	font-size: 0.875rem;
+}
 
-                <div class="card--project">
-                    <a href="project1.html" ><span>🏆 </span>Ecommerce platform using paypal and stripe API for payment integration</a>
-                </div>
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
 
-                <div class="card--project">
-                    <a href="project1.html"><span>🏆 </span>Social Network - open source project</a>
-                </div>
+.column {
+	padding: 0 1em;
+}
 
-            </section>
+.column:first-child {
+	padding-left: 0;
+}
 
-       
-        </div>
-        <div id="theme-switcher">
-            <div class="theme" id="theme-light" data-theme="light"></div>
-            <div class="theme" id="theme-dark" data-theme="dark"></div>
-        </div>
-    </body>
-    <script src="js/theme-switcher.js"></script>
-</html>
+.column:last-child {
+	padding-right: 0;
+}
 
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
 
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="15333eae-f3db-8090-8a07-df836805a2ee" class="page sans"><header><h1 class="page-title">index</h1><p class="page-description"></p></header><div class="page-body"><figure id="15333eae-f3db-81f7-91bf-f83c951f80ac" class="image"><a href="https://www.notion.so./assets/images/profile_pic.png"><img src="https://www.notion.so./assets/images/profile_pic.png"/></a></figure><h1 id="15333eae-f3db-81dd-9a00-f53281cdc879" class="">Allan Mogley</h1><p id="15333eae-f3db-81ca-a593-f2157e414c75" class="">Software developer, Data Engineer at  <a href="https://planate.com/">Planate Management Group</a>, </p><p id="15333eae-f3db-8152-ba57-cdcb9941f1c7" class="">👉 dennis@dennisivy.com</p><p id="15333eae-f3db-8193-96b8-c53e94b16f55" class=""><a href="https://x.com/MogleyAllan">Twitter</a><a href="https://www.linkedin.com/in/allanmogley/">Linkedin</a><a href="https://allanmogley.github.io/">Github</a></p><h2 id="15333eae-f3db-8164-b2ae-dfc3eeb0a630" class="">Skills &amp; Qualifications</h2><ul id="15333eae-f3db-81a0-97f6-f5ff8b7ace0e" class="bulleted-list"><li style="list-style-type:disc">✔️ 10 Years experience in fullstack development</li></ul><ul id="15333eae-f3db-810d-943f-d603b02c90ec" class="bulleted-list"><li style="list-style-type:disc">✔️ Tech educator &amp; online instructor (Youtube &amp; Udemy)</li></ul><ul id="15333eae-f3db-8170-b21d-d41230757336" class="bulleted-list"><li style="list-style-type:disc">✔️ Techincal writing &amp; Blogging</li></ul><ul id="15333eae-f3db-8129-a68c-d360f6090334" class="bulleted-list"><li style="list-style-type:disc">✔️ SEO &amp; paid ad campaigns (Google Adwords)</li></ul><h2 id="15333eae-f3db-812b-84db-e2d3b59e7afd" class="">Tech stack</h2><p id="15333eae-f3db-8197-b544-e787e436333d" class="">Python, JavaScript, NodeJS</p><p id="15333eae-f3db-8105-b82c-fcec7ccf0831" class="">Django, Express, Flask, FastAPI</p><p id="15333eae-f3db-8175-984f-c80db118df56" class="">React, Next JS</p><p id="15333eae-f3db-8154-800b-e52d3e8d7b52" class="">Postgres, MongoDB, MySQL</p><h2 id="15333eae-f3db-81c0-b9fe-e17e484025bf" class="">Work History</h2><p id="15333eae-f3db-817d-852a-c8ce88ab5afc" class=""><strong>🚧 DEVELOPER ADVOCATE | APPWRITE.IO</strong></p><p id="15333eae-f3db-819f-8e34-fcbea9fc95dd" class="">9/2023 - present</p><p id="15333eae-f3db-8186-9670-e7c85236716d" class=""><strong>[Current Challenge]</strong> Working to improve developer adoption and experience across all Appwrites SDKs through educational content on the Appwrite <a href="https://www.youtube.com/appwrite">Youtube channel</a>, <a href="https://appwrite.io/blog/author/dennis-ivy">articles</a>, &amp; <a href="https://www.youtube.com/live/VJvawxeUhN4">community events</a></p><p id="15333eae-f3db-81e2-ba40-c5af8cdaff23" class=""><strong>[Progress since 9/2023]</strong></p><ul id="15333eae-f3db-81be-8e8a-fe1db9bc9af3" class="bulleted-list"><li style="list-style-type:disc">Videos +39 | Views +136.6k</li></ul><ul id="15333eae-f3db-8199-9f9c-e15f2c187e49" class="bulleted-list"><li style="list-style-type:disc">Live streams: 5</li></ul><ul id="15333eae-f3db-81fe-be05-f997eebc33d8" class="bulleted-list"><li style="list-style-type:disc">Articles: 9</li></ul><ul id="15333eae-f3db-8108-943e-f4fd95cdbcf3" class="bulleted-list"><li style="list-style-type:disc">Events attended: 4</li></ul><p id="15333eae-f3db-8153-8d5f-f66150086c97" class=""><strong>🚧 DEVELOPER ADVOCATE | AGORA.IO</strong></p><p id="15333eae-f3db-8175-8a67-f4629dbb83d3" class="">11/2021 - 9/2023</p><p id="15333eae-f3db-8183-bd36-fb3c31cd5617" class="">Worked on making Agora’s Web-Based SDK more accessible through video tutorials, articles, demo projects, and event-based training. Also building out React UI components &amp; leading a team to re-design Agora’s documentation and API reference.</p><ul id="15333eae-f3db-817a-a675-d67b4b0e4781" class="bulleted-list"><li style="list-style-type:disc">Doubled Web SDK’s monthly usage minutes from 15 million to 30 million minutes within my first 4 months</li></ul><ul id="15333eae-f3db-81a2-ba0c-dfda7911894c" class="bulleted-list"><li style="list-style-type:disc">Produced educational video content which resulted in 300k+ views on youtube</li></ul><ul id="15333eae-f3db-81ce-8446-d9883d7a0ff6" class="bulleted-list"><li style="list-style-type:disc">Produced SEO campaigns and content to gain market share for related keywords.</li></ul><p id="15333eae-f3db-81e0-8572-f368f2741ca7" class=""><strong>🚧 INSTRUCTOR | YOUTUBE, UDEMY, TEACHABLE</strong></p><p id="15333eae-f3db-8146-bc3f-ee2b5f753c48" class="">11/2019 - Present</p><p id="15333eae-f3db-81ed-9915-d7a728a1a5b5" class="">Produced content showcasing new tech, tutorials &amp; interviews with top developers.</p><ul id="15333eae-f3db-81a8-bdb7-f58d8ecd2ea8" class="bulleted-list"><li style="list-style-type:disc">210k+ Youtube Subscribers</li></ul><ul id="15333eae-f3db-8197-a994-cfb70d294024" class="bulleted-list"><li style="list-style-type:disc">30,000 course copies sold</li></ul><ul id="15333eae-f3db-8154-bbfb-f471b91a4b47" class="bulleted-list"><li style="list-style-type:disc">12+ Million views on Youtube</li></ul><ul id="15333eae-f3db-8197-a333-ffd3979fdaa1" class="bulleted-list"><li style="list-style-type:disc">Made regular contributions to Traversy Medias YouTube channel (1.9m Subscribers)</li></ul><ul id="15333eae-f3db-8104-ab5e-c8d8f69d21e6" class="bulleted-list"><li style="list-style-type:disc">Tutorial videos included projects such as social networks, E-commerce, real-time video, stripe &amp; PayPal integrations, and more</li></ul><p id="15333eae-f3db-81c7-89ad-e2eb8e23cc2f" class=""><strong>🚧 SENIOR DEVELOPER | FOI LABS</strong></p><p id="15333eae-f3db-81ef-af16-c680a3fcef2d" class="">10/2017 - 10/2019</p><p id="15333eae-f3db-81c5-9f16-f55e76145aed" class="">Designed and developed a laboratory management system. My system<br/>provided an interface for lab technicians and customers to view and<br/>track data from samples tested in the lab.<br/></p><ul id="15333eae-f3db-81a2-bfc1-fcd89a2a7aff" class="bulleted-list"><li style="list-style-type:disc">Designed prototype &amp; pitched original idea for new lab management system (LIMS)</li></ul><ul id="15333eae-f3db-81e1-b866-f4461b0fac42" class="bulleted-list"><li style="list-style-type:disc">Built the entire code base and brought version 1.0 of the LIMS system to market as a solo developer</li></ul><ul id="15333eae-f3db-81ea-b50e-eb43c509c5eb" class="bulleted-list"><li style="list-style-type:disc">Onboarded and trained customers (Webinars &amp; Conferences)</li></ul><ul id="15333eae-f3db-8180-908b-e36669439a52" class="bulleted-list"><li style="list-style-type:disc">Managed a small team of developers in the expansion of the LIMS system</li></ul><p id="15333eae-f3db-8141-952e-cfd7ecd6ee92" class=""><strong>🚧 DIGITAL MARKETER | UNIFIVE DIGITAL</strong></p><p id="15333eae-f3db-8135-9371-ee8ee1009ae5" class="">2014 - 2017</p><p id="15333eae-f3db-8179-8ad6-dcbfddd5ad61" class="">Started a digital agency building websites and marketing for<br/>local businesses.<br/></p><ul id="15333eae-f3db-81e4-abe1-fc9940b7bc9b" class="bulleted-list"><li style="list-style-type:disc">Organized SEO &amp; SEM campaigns on a local and global scale.</li></ul><ul id="15333eae-f3db-8139-ab54-f843a702b197" class="bulleted-list"><li style="list-style-type:disc">Saved a customer $110k a year by reducing Adwords CPC cost with optimization</li></ul><ul id="15333eae-f3db-8186-8d80-f8742169caa9" class="bulleted-list"><li style="list-style-type:disc">70 + websites built with my small team of developers and freelancers</li></ul><h2 id="15333eae-f3db-813a-8144-ebd49dc8e81c" class="">Projects &amp; Accomplishments</h2><p id="15333eae-f3db-810d-98eb-dc897ba906ce" class=""><a href="https://www.notion.soproject1.html">🏆 Built a Laboratory management system for forensics lab</a></p><p id="15333eae-f3db-81d1-9d0e-e06b842dc210" class=""><a href="https://www.notion.soproject1.html">🏆 Documentation website - Lead team to re-build docs for agora.io</a></p><p id="15333eae-f3db-81e0-813d-d3a35257b120" class=""><a href="https://www.notion.soproject1.html">🏆 Ecommerce platform using paypal and stripe API for payment integration</a></p><p id="15333eae-f3db-81bf-b83d-f065e513ea73" class=""><a href="https://www.notion.soproject1.html">🏆 Social Network - open source project</a></p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
